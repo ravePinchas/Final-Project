@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router";
-import Home from "./pages/Home";
-import HomeHeader from "./cmp/homeHeader";
+import Home from "./pages/StayIndex";
+import HomeHeader from "./cmp/StayIndex/SearchStayBar";
+import StayIndex from "./pages/StayIndex";
+import StayDetails from "./pages/StayDetails";
 
 export function App() {
 
@@ -8,10 +10,10 @@ export function App() {
         <section className='main-app'>
             <HomeHeader />
             <Routes>
-                <Route path="/" element={<Home />} />
-                {/* <Route path="/aboutUs" element={<AboutUs />} /> */}
+                <Route path="/" element={<StayIndex />} />
+                <Route path="/stay/:stayId" element={<StayDetails />} />
             </Routes>
-        </section>
+        </section >
     )
 }
 
