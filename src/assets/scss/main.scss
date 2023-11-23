@@ -18,8 +18,42 @@ header {
 .search-bar{
   padding-left: 24px;
   padding-right: 24px;
-  width: 350px;
+  width: 296px;
+  height: 46px;
+  margin-top: 17px;
+  border: 0.5px solid black;
+  border-radius: 50px;
 }
+
+.anywhere-btn {
+  width: 108.72px;
+  height: 46px;
+  border: 0px;
+  cursor: pointer; 
+  background-color: transparent; 
+  border-right: 0.5px solid black;
+  text-align: left;
+  padding-left: 17px;
+}
+.anyweek-btn {
+  width: 97.75px;
+  height: 46px;
+  border: 0px;
+  cursor: pointer; 
+  background-color: transparent; 
+  border-right: 0.5px solid black;
+}
+
+.guest-btn {
+  width: 88px;
+  height: 46px;
+  border: 0px;
+  cursor: pointer; 
+  background-color: transparent; 
+}
+
+
 .profile-bar{
   width: 393px;
 }
+
