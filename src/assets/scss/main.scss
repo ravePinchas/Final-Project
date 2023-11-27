@@ -1,18 +1,18 @@
 .logo-img {
   width: 102px;
-  height: 80px;
+  height: 55px;
 }
 
 header {
   display: flex;
   padding-left: 40px;
   padding-right: 40px;
-  height: 80px
+  height: 55px
 }
 
 .logo-div{
   width: 393px;
-  height: 80px;
+  height: 55px;
 }
 
 .search-bar{
@@ -20,7 +20,8 @@ header {
   padding-right: 24px;
   width: 296px;
   height: 46px;
-  margin-top: 17px;
+  text-align: center;
+  margin-top: 5px;
   border: 0.5px solid black;
   border-radius: 50px;
 }
@@ -56,4 +57,32 @@ header {
 .profile-bar{
   width: 393px;
 }
+
+.StaysTypeBar{
+  display: grid;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 1183px;
+  height: 78px;
+  font-size: 12px;
+  column-gap: 32px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  grid-template-columns: 56px 56px 56px 56px 87px 85px 56px 81px 56px 70px 56px;
+  span {
+    padding-top: 8px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
 
