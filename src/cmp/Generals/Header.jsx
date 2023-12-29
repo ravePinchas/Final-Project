@@ -1,20 +1,16 @@
 import React from 'react'
 import SearchStayBar from './SearchStayBar'
+import Logo from './logo'
+import Profile from './Profile'
 export default function Header() {
   return (
     <>
       <header>
-        <div className="logo-div">
-          <a href=""><img className='logo-img' src="/images/airbnb-logo.jpg" alt="" /></a>
-        </div>
-        <div>
-          <SearchStayBar></SearchStayBar>
-        </div>
-        <div className="profile-bar">
-
-        </div>
+        <Logo></Logo>
+        <SearchStayBar></SearchStayBar>
+        <Profile></Profile>
       </header>
-      <hr />
+
     </>
   )
 }

@@ -1,8 +1,8 @@
-const stay = {
+const stays = {
   _id: "s101",
   name: "Ribeira Charming Duplex",
   type: "House",
-  imgUrls: ["https://e26e9b.jpg", "otherImg.jpg"],
+  imgUrls: ["/images/stay01.webp"],
   price: 80.00,
   summary: "Fantastic duplex apartment...",
   capacity: 8,
