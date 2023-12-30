@@ -1,7 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default function StayPreview() {
+export default function StayPreview({ stay }) {
   return (
-    <div>StayPreview</div>
+    <>
+      <Link className="link-preview" to={`/`}>
+        <img src={stay.imgUrl} alt="" />
+      </Link>
+    </>
   )
 }

@@ -4,15 +4,16 @@ import StayPreview from './StayPreview'
 
 export default function StayList({ stays }) {
   return (
-    <>
-      <div className="stay-list">
-        <img src={stays[0].imgUrl} alt="" />
-      </div>
-      { /* {emails.map((email) => (
-        <div className="emails-list" key={email.id}>
-          <StayPreview></StayPreview>
-        </div>
-      ))} */}
-    </>
+    <section className="stay-list">
+      {
+        stays.map(stay => <div key={stay.id}>
+          <StayPreview stay={stay} />
+          {/* <div className="robot-actions">
+            <button onClick={() => onRemove(robot.id)}>X</button>
+            <Link to={`/robot/edit/${robot.id}`}><button>Edit</button></Link>
+          </div> */}
+        </div>)
+      }
+    </section>
   )
 }
