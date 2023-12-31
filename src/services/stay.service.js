@@ -19,32 +19,23 @@ const STORAGE_KEY = 'stays'
 
 _createStays()
 
-async function query(/*filterBy*/) {
-    let stays = await storageService.query(STORAGE_KEY)
-    // if (filterBy) {
-    //     let { minBatteryStatus, type = '', model = '' } = filterBy
-    //     minBatteryStatus = minBatteryStatus || 0
-    //     stays = stays.filter(stay => stay.type.toLowerCase().includes(type.toLowerCase())
-    //         && stay.batteryStatus >= minBatteryStatus && stay.model.toLowerCase().includes(model.toLowerCase()))
-    // }
-    return stays
+
+function query() {
+    return storageService.query(STORAGE_KEY)
+}
+function getById(stayId) {
+    return storageService.get(STORAGE_KEY, stayId)
 }
 
-
-function getById(id) {
-    return storageService.get(STORAGE_KEY, id)
+function remove(stayId) {
+    return storageService.remove(STORAGE_KEY, stayId)
 }
 
-function remove(id) {
-    return storageService.remove(STORAGE_KEY, id)
-}
-
-function save(stayToSave) {
-    if (stayToSave.id) {
-        return storageService.put(STORAGE_KEY, stayToSave)
+async function save(stay) {
+    if (stay._id) {
+        return storageService.put(STORAGE_KEY, stay)
     } else {
-        stayToSave.isOn = false
-        return storageService.post(STORAGE_KEY, stayToSave)
+        return storageService.post(STORAGE_KEY, stay)
     }
 }
 
@@ -76,7 +67,7 @@ function getFilterFromParams(searchParams) {
 
 function getStayShape() {
     return PropTypes.shape({
-        id: PropTypes.string,
+        _id: PropTypes.string,
         model: PropTypes.string,
         type: PropTypes.string,
         batteryStatus: PropTypes.number,
