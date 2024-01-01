@@ -1,0 +1,65 @@
+.profile-bar{
+  // width: 392.91px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  a{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 102px;
+  }
+
+  .text-profile-div{
+    width: 299px;
+    height: 42px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a{
+      padding: 12px;
+      width: 119px;
+      height: 42px;
+      text-decoration: none;
+      color: black;
+    }
+    button{
+      align-items: center;
+      cursor: pointer;
+      display: block;
+      appearance: none;
+      background-color: white;
+      outline: none;
+      border: none;
+      padding: 12px;
+    }
+  }
+}
+
+.StaysTypeBar{
+  display: grid;
+  padding-top: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 1183px;
+  height: 78px;
+  font-size: 12px;
+  column-gap: 32px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  grid-template-columns: 56px 56px 56px 56px 87px 85px 56px 81px 56px 70px 56px;
+  span {
+    padding-top: 8px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
