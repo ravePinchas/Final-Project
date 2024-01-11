@@ -1,5 +1,5 @@
 import {stayService} from "../../services/stay.service"
-import { ADD_STAY, SET_FILTER_BY, SET_STAY,UPDATE_STAY } from "../reducers/stay.reducer";
+import { ADD_STAY, SET_STAY,UPDATE_STAY } from "../reducers/stay.reducer";
 import { store } from "../store";
 
 export async function loadStays(){
