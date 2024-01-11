@@ -1,0 +1,35 @@
+.stays-type-bar {
+  display: flex;
+  padding-top: 12px;
+  justify-content: space-between;
+  // width: 100%;
+  // padding-left: 40px;
+  // padding-right: 40px;
+  // width: 1183px;
+  height: 78px;
+  font-size: 12px;
+  column-gap: 8px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  span {
+    padding-top: 8px;
+    text-align: center;
+    display: flex;
+  }
+
+  label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+  }
+
+  img {
+    text-align: center;
+    display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+}
