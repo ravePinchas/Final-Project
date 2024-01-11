@@ -1,0 +1,49 @@
+.stay-list {
+  // argin-top: 16px;
+  // margin-bottom: 72px;
+  // margin-left: 40px;
+  // margin-right: 40px;
+  // padding-left: 40x;
+  // padding-right: 40px;m
+  // width: 1183px;
+  display: grid;
+  grid-gap: 40px 24px;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+  .stay-preview {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5%;
+      aspect-ratio: 20/19;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.stay-list-name {
+  color: rgb(34, 34, 34);
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+.stay-list-added {
+  color: rgb(113, 113, 113);
+}
+
+.stay-list-month {
+  color: rgb(113, 113, 113);
+}
+
+.stay-list-price {
+  margin-top: 6px;
+
+  span {
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
