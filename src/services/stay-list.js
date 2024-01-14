@@ -140,7 +140,7 @@ export const staysList =
     _id: "s103",
     name: "Jerusalem, Israel",
     type: "Chef's kitchens",
-    imgUrls: ["/images/stay06.webp", "/images/stay06d1.webp", "/images/stay06.webpd2"],
+    imgUrls: ["/images/stay06.webp", "/images/stay06d1.webp", "/images/stay06d2.webp"],
     price: 7388,
     summary: "NEW 6 BEDROOM 5.5 BATHROOM HOME IN THE DAVID LEGACY -ACROSS FROM MAMILA- LUXURIOUS FURNISHINGS AND BEDDINGS- HIGH END APPLAINCES- CAN SLEEP 14 PEOPLE-HUGE OUTDOOR AREA WITH OUTDOOR SITTING-2 SEPARATE ENTRANCES-HIGH SPEED WIFI-PERFECT FOR FAMILIES-2 MINUTE WALK TO MAMIL SHOPS AND RESTAURANTS-5 MINUTE WALK TO OLD CITY-15 MINUTE WALK TO KOTEL",
     capacity: 8,

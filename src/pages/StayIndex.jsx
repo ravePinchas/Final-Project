@@ -32,10 +32,8 @@ export default function StayIndex() {
   return (
     <section>
       <StaysTypeBar></StaysTypeBar>
-      <button onClick={onAddStay}>add stay</button>
+      {/* <button onClick={onAddStay}>add stay</button> */}
       <StayList stays={stays}></StayList>
-
-
     </section>
   )
 }

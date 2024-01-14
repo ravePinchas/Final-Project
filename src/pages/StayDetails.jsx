@@ -7,6 +7,8 @@ export default function StayDetails() {
   const { stayId } = useParams()
 
   useEffect(() => {
+    console.log('enter use effect');
+    console.log('stayId', stayId);
     loadStay()
   }, [])
 
@@ -14,8 +16,9 @@ export default function StayDetails() {
     try {
       const stay = await stayService.getById(stayId)
       setStay(stay)
+      console.log('stay: ', stay);
     } catch (err) {
-      showErrorMsg('Cannot load stay')
+      // showErrorMsg('Cannot load stay')
     }
   }
 

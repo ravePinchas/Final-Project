@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function StaysTypeBar() {
   return (
-    <div className="StaysTypeBar">
+    <section className="stays-type-bar">
       <label>
         <img className="i181yxiv dir dir-ltr" src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="" width="24" height="24"></img>
         <span>Farm</span>
@@ -47,6 +47,6 @@ export default function StaysTypeBar() {
         <img className="i181yxiv dir dir-ltr" src="https://a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt="" width="24" height="24"></img>
         <span>Mansions</span>
       </label>
-    </div>
+    </section>
   )
 }

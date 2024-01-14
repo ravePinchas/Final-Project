@@ -1,11 +1,16 @@
 //BASE
 @import 'base/base.scss';
+@import 'base/layout.scss';
 
 // COMPONENTS
+@import 'cmps/header.scss';
 @import 'cmps/logo.scss';
 @import 'cmps/profile.scss';
-@import 'cmps/searchStayBar.scss';
-@import 'cmps/stayList.scss';
+@import 'cmps/replaced-seach-bar.scss';
+@import 'cmps/search-stay-bar.scss';
+@import 'cmps/stay-list.scss';
+@import 'cmps/stay-type-bar.scss';
 
 
-
+//PAGES
+@import 'pages/stay-details.scss';

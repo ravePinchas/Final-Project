@@ -8,10 +8,6 @@ export default function StayList({ stays }) {
       {
         stays.map(stay => <div key={stay._id}>
           <StayPreview stay={stay} />
-          {/* <div className="robot-actions">
-            <button onClick={() => onRemove(robot.id)}>X</button>
-            <Link to={`/robot/edit/${robot.id}`}><button>Edit</button></Link>
-          </div> */}
         </div>)
       }
     </section>
