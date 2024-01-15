@@ -20,8 +20,12 @@ const STORAGE_KEY = 'stays'
 _createStays()
 
 
-function query() {
-    return storageService.query(STORAGE_KEY)
+async function query(filterBy ={}) {
+    let stays = await storageService.query(STORAGE_KEY)
+    if (filterBy) {
+        stays = stays.filter(stay => stay.type.toLowerCase().includes(filterBy.type.toLowerCase()))
+    }
+    return stays
 }
 function getById(stayId) {
     return storageService.get(STORAGE_KEY, stayId)
@@ -48,11 +52,7 @@ function createStay(model = '', type = '', batteryStatus = 100) {
 }
 
 function getDefaultFilter() {
-    return {
-        type: '',
-        minBatteryStatus: '',
-        model: ''
-    }
+    return ''
 }
 
 function getFilterFromParams(searchParams) {

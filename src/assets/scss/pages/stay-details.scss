@@ -72,15 +72,28 @@
 
 .aminiteis-display {
   margin-top: 48px;
-  width: 323px;
+
+  // width: 400px;
+  .aminity-preview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 
   h2 {
-    font-weight: 400;
+    font-weight: 600;
     padding-bottom: 24px;
   }
 
-  div {
+  >div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
+    padding-bottom: 16px;
+    gap: 15px;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
   }
 }

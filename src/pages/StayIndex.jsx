@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import StaysTypeBar from '../cmp/StayIndex/StaysTypeBar'
 import StayContent from '../cmp/StayIndex/StayContent'
 import { useSelector } from 'react-redux'
-import { loadStays } from '../store/actions/stay.actions'
+import { loadStays, setFilterBy } from '../store/actions/stay.actions'
 import StayList from '../cmp/StayIndex/StayList'
 import { stayService } from '../services/stay.service'
 import { saveStay } from "../store/actions/stay.actions";
@@ -10,9 +10,11 @@ import { saveStay } from "../store/actions/stay.actions";
 
 export default function StayIndex() {
   const stays = useSelector(storeState => storeState.stayModule.stays)
+  const filterBy = useSelector(storeState => storeState.stayModule.filterBy)
+
   useEffect(() => {
     loadStays()
-  }, [])
+  }, [filterBy])
 
   async function onAddStay() {
     const stay = {
@@ -27,11 +29,16 @@ export default function StayIndex() {
       //showErrorMsg('Cannot add stay')
     }
   }
+  function onSetFilter(type) {
+    const filterBy = { type }
+    setFilterBy(filterBy)
+  }
+
 
   if (!stays) return
   return (
     <section>
-      <StaysTypeBar></StaysTypeBar>
+      <StaysTypeBar onSetFilter={onSetFilter}></StaysTypeBar>
       {/* <button onClick={onAddStay}>add stay</button> */}
       <StayList stays={stays}></StayList>
     </section>

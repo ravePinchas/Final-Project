@@ -6,8 +6,11 @@
 }
 
 .search-bar {
+  // max-width: 280px;
+  margin: 6px auto;
   display: flex;
   align-items: center;
+  // justify-content: center;
   // width: 348.53px;
   padding-block: 10px;
   height: 47.33px;
@@ -91,5 +94,93 @@
       border-radius: 50%;
       background-color: rgb(255, 56, 92);
     }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.active-search-stay-bar {
+  // justify-content: center;
+  visibility: visible;
+  border: solid 0.667px rgb(221, 221, 221);
+  border-radius: 32px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 850px;
+  margin-left: 150px;
+}
+
+.not-active-search-stay-bar {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.where-active-btn {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.check-in-acitve-btn {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.check-out-acitve-btn {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.guest-active-btn {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+}
+
+.active-btn {
+  // display: block;
+  cursor: pointer;
+  text-align: left;
+
+
+  span {
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 2px;
+    // text-size-adjust: 100%;
+  }
+
+  input {
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+  }
+
+  .icon-btn-active {
+    background-color: rgb(255, 56, 92);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    align-items: center;
+    padding: 16px;
   }
 }

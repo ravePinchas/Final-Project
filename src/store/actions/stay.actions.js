@@ -1,10 +1,11 @@
 import {stayService} from "../../services/stay.service"
-import { ADD_STAY, SET_STAY,UPDATE_STAY } from "../reducers/stay.reducer";
+import { ADD_STAY, SET_FILTER_BY, SET_STAY,UPDATE_STAY } from "../reducers/stay.reducer";
 import { store } from "../store";
 
 export async function loadStays(){
   try{
     const filterBy = store.getState().stayModule.filterBy
+    console.log(filterBy);
     const stays = await stayService.query(filterBy)
     store.dispatch({ type: SET_STAY, stays })
     // const filterBy = store.getState().stayModule.filterBy

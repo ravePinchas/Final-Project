@@ -49,9 +49,11 @@ export const staysList =
       "TV",
       "Wifi",
       "Kitchen",
-      "Smoking allowed",
-      "Pets allowed",
-      "Cooking basics"
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+
     ],
     labels: [
       "Top of the world",

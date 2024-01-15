@@ -3,9 +3,11 @@
   color: rgb(255, 56, 92);
 }
 
-.logo-div{
+.logo-div {
   width: 392.91px;
-  a{
+  max-height: 80px;
+
+  a {
     display: flex;
     align-items: center;
     height: 80px;

@@ -54,6 +54,11 @@ export default function StayDetails() {
             4 reviews
           </div>
         </section>
+
+        {/* <div className="reservation-display">
+          961
+        </div> */}
+
         <hr />
 
         <section className="host-display">
@@ -76,15 +81,16 @@ export default function StayDetails() {
           <div>
             {
               stay.amenities.map(aminity =>
-                <div>{aminity}</div>
+                <div className="aminity-preview" key={aminity}>
+                  <img src={"/images/aminities/" + aminity + ".jpg"} alt="" />
+                  <span>{aminity}</span>
+
+                </div>
               )
             }
           </div>
-
         </section>
-
       </div>
-
     </section>
   )
 }
