@@ -15,7 +15,10 @@ export default function Header() {
     if (location.pathname.includes('/stay/')) {
       setActiveSearch(false)
     }
-    console.log('is active? ', isActive);
+    if (location.pathname.includes('/reservation/')) {
+      setActiveSearch(true)
+    }
+
   }
 
   return (

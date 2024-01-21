@@ -26,9 +26,8 @@
     flex-basis: 1px;
     width: 1px;
     height: 24px;
-    // line-height: 20.02px;
     line-break: strict;
-    box-sizing: border-box;
+    // box-sizing: border-box;
   }
 
   .search-btn {
@@ -110,13 +109,20 @@
 .active-search-stay-bar {
   // justify-content: center;
   visibility: visible;
-  border: solid 0.667px rgb(221, 221, 221);
-  border-radius: 32px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  width: 850px;
-  margin-left: 150px;
+  display: block;
+
+  width: 100%;
+
+  section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 0.667px rgb(221, 221, 221);
+    border-radius: 32px;
+    width: 850px;
+    // margin-left: 150px;
+    // margin-right: 150px;
+  }
 }
 
 .not-active-search-stay-bar {
@@ -133,6 +139,7 @@
 }
 
 .check-in-acitve-btn {
+  width: 142px;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 14px;
@@ -140,6 +147,7 @@
 }
 
 .check-out-acitve-btn {
+  width: 142px;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 14px;
@@ -152,6 +160,15 @@
   padding-top: 14px;
   padding-bottom: 14px;
   display: flex;
+
+}
+
+.row-line-span {
+  background-color: rgb(221, 221, 221);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 1px;
+  line-break: strict;
 }
 
 .active-btn {

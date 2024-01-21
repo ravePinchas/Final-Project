@@ -1,0 +1,19 @@
+.confirm-reserve {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 64px;
+  padding-bottom: 16px;
+  display: flex;
+
+  .back-to-stay-link {
+    margin-left: -34px;
+    margin-top: 10px;
+    padding-right: 18px;
+    width: 34px;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
