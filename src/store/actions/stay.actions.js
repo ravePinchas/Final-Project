@@ -33,6 +33,14 @@ export function setFilterBy(filterBy) {
   store.dispatch({ type: SET_FILTER_BY, filterBy })
 }
 
+// export function setCheckIn(checkIn) {
+//   store.dispatch({ type: SET_CHECK_IN, checkIn })
+// }
+
+// export function setCheckOut(checkOut) {
+//   store.dispatch({ type: SET_CHECK_OUT, checkOut })
+// }
+
 // export async function removeStay(stayId) {
 //   try {
 //       store.dispatch({ type: REMOVE_STAY, stayId })

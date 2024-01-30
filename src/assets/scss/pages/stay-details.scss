@@ -258,16 +258,19 @@
   position: relative;
 
   .popup-date {
-    width: 660px;
+    // width: 660px;
     // height: 320px;
     right: 0;
     position: absolute;
     top: 50px;
     z-index: 10000;
-    display: flex;
+    // display: flex;
     border: 0.677px solid rgb(176, 176, 176);
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
+    background-color: white;
+    text-align: center;
+    // padding-top: 32px;
   }
 
   .not-popup-date {
@@ -280,4 +283,24 @@
     display: flex;
     visibility: hidden;
   }
+}
+
+.total-night-details {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+.order-reservation-details {
+  margin-top: 24px;
+}
+
+.span2-details-order {
+  margin-left: auto;
+}
+
+.total-details {
+  display: flex;
+  padding-top: 24px;
+  font-weight: 600;
 }

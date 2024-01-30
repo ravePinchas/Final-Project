@@ -7,43 +7,37 @@ export const staysList =
     type: "Amazing views",
     imgUrls: ["/images/stay01.webp", "/images/stay01d1.webp", "/images/stay01d2.webp"],
     price: 995,
-    summary: `This lovely Relaxing apartment is situated in the central part of Tel Aviv with stunning sea views right across from Gordon beach, next to all the seaside hotels and Tel Aviv beautiful boardwalk.
-    located close to restaurants, bars, cafes, a gym, a public pool, supermarkets, a pharmacy, 24 hour convenience stores, and other attractions.
-    location for your next vacation in Tel Aviv.
-    You can alos find public transportation, bicycle, electric scooter sharing services and paid parking nearby.
-    The space
-    A stunning and ventilated apartment on the third floor, an 80-meter apartment. There is no elevator.
-    The apartment is very decorated, with many real plants in the apartment, the design, the view and the plants give a combination of the perfect vacation.
+    summary: `This lovely Relaxing apartment is situated in the central part of Tel Aviv with stunning sea views right across from Gordon beach, next to all the seaside hotels and Tel Aviv beautiful boardwalk. located close to restaurants, bars, cafes, a gym, a public pool, supermarkets, a pharmacy, 24 hour convenience stores, and other attractions. location for your next vacation in Tel Aviv. You can alos find public transportation, bicycle, electric scooter sharing services and paid parking nearby.
+
+A stunning and ventilated apartment on the third floor, an 80-meter apartment. There is no elevator. The apartment is very decorated, with many real plants in the apartment, the design, the view and the plants give a combination of the perfect vacation.
+
+The apartment is on the 3rd floor without an elevator
     
-    The apartment is on the 3rd floor without an elevator
+- You can enjoy a private and well-equipped gym in the apartment. It is important to know that the use of fitness equipment is the sole responsibility of the user.
     
+- Enjoy a fully equipped kitchen, a filtered, hot and cold water bar. Quality coffee machine.
     
-    - You can enjoy a private and well-equipped gym in the apartment.
-    It is important to know that the use of fitness equipment is the sole responsibility of the user.
+- The apartment is close to all the attractions of Tel Aviv, a minute's walk to the beaches, popular restaurants, bars and the supermarket.
     
-    -Enjoy a fully equipped kitchen, a filtered, hot and cold water bar.
-    Quality coffee machine.
+Enjoyment in the apartment is guaranteed!
+  
+*The apartment has private equipment of people who live in the apartment.
+Keep their privacy, don't open locked cabinets and don't tag them with their personal belongings. Thanks
     
-    - The apartment is close to all the attractions of Tel Aviv, a minute's walk to the beaches, popular restaurants, bars and the supermarket.
+Non Israeli residents are not subject to VAT, for compliance reasons you will be asked to send a valid passport photo and your tourist visa (B2, B3, or B4) upon your arrival.
+In the case you fail to send your B2 entry visa, 17% VAT will be added to your reservation.
+
+    *בעלי דרכון ישראלי מחוייבים בתוספת 17% 
     
-    Enjoyment in the apartment is guaranteed!
+The entire property is available for guests with privacy guaranteed.
     
-    *The apartment has private equipment of people who live in the apartment.
-    Keep their privacy, don't open locked cabinets and don't tag them with their personal belongings. Thanks
+The apartment Is in a residential building and it's really important that our guests keep the peace and quiet of our neighbors.
+Not meant for parties but a quiet relaxing vacation.
+  
+The apartment Is in a residential building and it's really important that our guests keep the peace and quiet of our neighbors.
+Not meant for parties but a quiet relaxing vacation.
     
-    Non Israeli residents are not subject to VAT, for compliance reasons you will be asked to send a valid passport photo and your tourist visa (B2, B3, or B4) upon your arrival.
-    In the case you fail to send your B2 entry visa, 17% VAT will be added to your reservation.
-    *בעלי דרכון ישראלי מחוייבים בתוספת 17% מע״מ
-    Guest access
-    The entire property is available for guests with privacy guaranteed.
-    
-    The apartment Is in a residential building and it's really important that our guests keep the peace and quiet of our neighbors.
-    Not meant for parties but a quiet relaxing vacation.
-    Other things to note
-    The apartment Is in a residential building and it's really important that our guests keep the peace and quiet of our neighbors.
-    Not meant for parties but a quiet relaxing vacation.
-    
-    If you have a car - there is an option to check if the private parking is available. ask us`,
+If you have a car - there is an option to check if the private parking is available. ask us`,
     capacity: 6,
     amenities: [
       "TV",
@@ -101,9 +95,10 @@ export const staysList =
       "TV",
       "Wifi",
       "Kitchen",
-      "Smoking allowed",
-      "Pets allowed",
-      "Cooking basics"
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
     ],
     labels: [
       "Top of the world",
@@ -150,9 +145,10 @@ export const staysList =
       "TV",
       "Wifi",
       "Kitchen",
-      "Smoking allowed",
-      "Pets allowed",
-      "Cooking basics"
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
     ],
     labels: [
       "Top of the world",
@@ -210,9 +206,10 @@ export const staysList =
       "TV",
       "Wifi",
       "Kitchen",
-      "Smoking allowed",
-      "Pets allowed",
-      "Cooking basics"
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
     ],
     labels: [
       "Top of the world",
@@ -279,9 +276,10 @@ export const staysList =
       "TV",
       "Wifi",
       "Kitchen",
-      "Smoking allowed",
-      "Pets allowed",
-      "Cooking basics"
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
     ],
     labels: [
       "Top of the world",
@@ -345,9 +343,10 @@ export const staysList =
       "TV",
       "Wifi",
       "Kitchen",
-      "Smoking allowed",
-      "Pets allowed",
-      "Cooking basics"
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
     ],
     labels: [
       "Top of the world",
@@ -410,9 +409,10 @@ export const staysList =
       "TV",
       "Wifi",
       "Kitchen",
-      "Smoking allowed",
-      "Pets allowed",
-      "Cooking basics"
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
     ],
     labels: [
       "Top of the world",

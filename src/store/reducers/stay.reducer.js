@@ -47,7 +47,6 @@ export function stayReducer(state = initialState, action = {}){
         ...state,
         stayService: [...state.lastStays]
       }
-
     default:
       return state
   }

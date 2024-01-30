@@ -75,8 +75,59 @@ ul {
 }
 
 /* Highlight the "current" day */
-.days li .active-date {
+.active-date {
   padding: 5px;
   background: black;
   color: white !important
+}
+
+
+
+
+.custom-datepicker {
+  border: none;
+}
+
+.react-datepicker {
+  font-family: Arial, sans-serif;
+}
+
+.react-datepicker__day--selected {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+
+.react-datepicker__day {
+  width: 37px !important;
+  height: 37px !important;
+  text-align: center !important;
+  /* You can adjust the padding size as per your preference */
+}
+
+
+.date-picker-checkout {
+  margin-left: 9px;
+  margin-right: 9px;
+
+  h2 {
+    padding-bottom: 16px;
+  }
+}
+
+.date-picker-checkin {
+  margin-left: 9px;
+  margin-right: 9px;
+
+  h2 {
+    padding-bottom: 16px;
+  }
+}
+
+.picker-dates {
+  border: none;
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

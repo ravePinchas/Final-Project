@@ -1,24 +1,30 @@
 import React from 'react'
 
 export default function ActiveSearchStayBar() {
+
+  function onAddPopupSearch() {
+
+  }
+
   return (
     <section>
-      <div className="active-btn where-active-btn">
+
+      <div onClick={onAddPopupSearch} className="active-btn where-active-btn">
         <span>Where</span>
         <input type="search" placeholder="Search destination" />
       </div>
       <span className="row-line-span"></span>
-      <div className="active-btn check-in-acitve-btn">
+      <div onClick={onAddPopupSearch} className="active-btn check-in-acitve-btn">
         <span>Check in</span>
         <input type="search" placeholder="Add dates" />
       </div>
       <span className="row-line-span"></span>
-      <div className="active-btn check-out-acitve-btn">
+      <div onClick={onAddPopupSearch} className="active-btn check-out-acitve-btn">
         <span>Check out</span>
         <input type="search" placeholder="Add dates" />
       </div>
       <span className="row-line-span"></span>
-      <div className="active-btn guest-active-btn">
+      <div onClick={onAddPopupSearch} className="active-btn guest-active-btn">
         <div>
           <span>Who</span>
           <input type="search" placeholder="Add guests" />
@@ -31,6 +37,12 @@ export default function ActiveSearchStayBar() {
           </button>
         </div>
       </div>
+      {/* <div className={isPopupSearch ? "popup-search" : "not-popup-search"} >
+        <DatePickerReserversion />
+      </div> */}
+
+
+
     </section>
   )
 }

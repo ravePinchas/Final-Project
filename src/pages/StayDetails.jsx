@@ -1,19 +1,24 @@
 import React, { useEffect, useState } from 'react'
+import DateReservation from '../cmp/StayDetails/DateReservation'
 import { useParams } from 'react-router'
 import { stayService } from '../services/stay.service'
-import DateReservation from '../cmp/StayDetails/DateReservation'
+import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import DatePickerReserversion from '../cmp/StayDetails/DatePickerReserversion'
 
 export default function StayDetails() {
   const [stay, setStay] = useState()
   const { stayId } = useParams()
-  const [monthReservetion, setMonthReservetion] = useState()
-  const [dayReservetion, setDayReservetion] = useState()
-
   const [isPopupDate, setPopupDate] = useState(false)
+  const [orderId, setOrderId] = useState(null);
+  // const checkIn = useSelector(storeState => storeState.orderModule.checkInDate)
+  // const checkOut = useSelector(storeState => storeState.orderModule.checkOutDate)
+  const numberOfDays = useSelector(storeState => storeState.orderModule.numberOfDays)
+
+  // const orders = useSelector(storeState => storeState.orderModule.orders)
+
 
   useEffect(() => {
-    console.log('enter use effect');
-    console.log('stayId', stayId);
     loadStay()
   }, [])
 
@@ -26,6 +31,12 @@ export default function StayDetails() {
       // showErrorMsg('Cannot load stay')
     }
   }
+
+  function createNewOrderID() {
+    const newOrderId = utilService.makeId();
+    setOrderId(newOrderId);
+    setShowDatePicker(!showDatePicker);
+  };
 
   function onAddPopupDate() {
     setPopupDate(!isPopupDate)
@@ -114,8 +125,9 @@ export default function StayDetails() {
               </button>
 
               <div className={isPopupDate ? "popup-date" : "not-popup-date"} >
-                <DateReservation monthReservetion={monthReservetion} dayReservetion={dayReservetion} />
-                <DateReservation monthReservetion={monthReservetion} dayReservetion={dayReservetion} />
+                <DatePickerReserversion onAddPopupDate={onAddPopupDate} />
+                {/* <DateReservation onSetCheckIn={onSetCheckIn} />
+                <DateReservation onSetCheckOut={onSetCheckOut} /> */}
               </div>
 
               <button className="guest-btn-reservation">
@@ -128,12 +140,30 @@ export default function StayDetails() {
             </div>  {/* end of reservation body*/}
 
             <div>
-              <button class="reserve-btn">Reserve</button>
+              <Link to={"reservation"}>
+                <button className="reserve-btn">Reserve</button>
+              </Link>
+            </div>
+
+            <div className="order-reservation-details">
+              <div className="total-night-details">
+                <span className="span1-details-order">₪{stay.price + " "}x{" " + " nights"}</span>
+                <span className="span2-details-order">₪{stay.price}</span>
+              </div>
+              <div className="total-night-details">
+                <span className="span1-details-order"> Cleaning fee </span>
+                <span className="span2-details-order"> ₪100</span>
+              </div>
+            </div>
+            <hr />
+            <div className="total-details">
+              <span className="span1-details-order"> Total </span>
+              <span className="span2-details-order"> ₪{stay.price * numberOfDays + 100}</span>
             </div>
           </div>  {/* end of the reservation */}
 
         </section>
-      </div >
+      </div>
     </section >
   )
 }
