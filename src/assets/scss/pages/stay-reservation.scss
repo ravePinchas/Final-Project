@@ -51,12 +51,20 @@
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
 
-.your-trip-reservaion {
+.your-trip-reservasion {
   padding-bottom: 24px;
 }
 
 .body-right-reservation-page {
-  padding-bottom: 24px;
+  padding: 24px;
+  border: solid 0.677px rgb(221, 221, 221);
+  margin-left: auto;
+  flex-grow: 1;
+  margin-left: 90px;
+  height: 450px;
+  position: sticky;
+  top: 32px;
+  border-radius: 12px;
 }
 
 .dates-body-left-reservation {
@@ -194,4 +202,37 @@
   .svg-arrow-region {
     margin-left: auto;
   }
+}
+
+.header-div-reservasion {
+  padding-bottom: 24px;
+  display: flex;
+
+  img {
+    width: 124px;
+    height: 106px;
+    border-radius: 12px;
+  }
+
+  .header-div-reservasion-middle {
+    padding-left: 12px;
+
+    .first-middle-header-reservasion {
+      font-size: 12px;
+      color: rgb(113, 113, 113);
+      font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    }
+
+    .secound-middle-header-reservasion {
+      margin-top: 4px;
+      font-size: 14px;
+      color: rgb(34, 34, 34);
+      font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    }
+  }
+}
+
+.price-details-reservasion {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }

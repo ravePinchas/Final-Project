@@ -5,18 +5,38 @@ import { stayService } from '../services/stay.service'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import DatePickerReserversion from '../cmp/StayDetails/DatePickerReserversion'
+import { saveOrder, updateCurrentOrder } from '../store/actions/order.actions'
 
 export default function StayDetails() {
   const [stay, setStay] = useState()
   const { stayId } = useParams()
   const [isPopupDate, setPopupDate] = useState(false)
-  const [orderId, setOrderId] = useState(null);
-  // const checkIn = useSelector(storeState => storeState.orderModule.checkInDate)
-  // const checkOut = useSelector(storeState => storeState.orderModule.checkOutDate)
+  // const [orderId, setOrderId] = useState(null);
+  const checkIn = useSelector(storeState => storeState.orderModule.checkInDate)
+  const checkOut = useSelector(storeState => storeState.orderModule.checkOutDate)
   const numberOfDays = useSelector(storeState => storeState.orderModule.numberOfDays)
 
   // const orders = useSelector(storeState => storeState.orderModule.orders)
 
+  function onSaveOrder() {
+    if (numberOfDays < 1) {
+      return
+    }
+    var newOrder = {
+      startDate: checkIn,
+      endDate: checkOut,
+      numberOfDays: numberOfDays,
+      totalPrice: numberOfDays * stay.price,
+      stay: {
+        _id: stay._id,
+        name: stay.name,
+        price: stay.price
+      },
+    }
+    saveOrder(newOrder)
+    console.log("onSaveOrder");
+    // updateCurrentOrder(newOrder)
+  }
 
   useEffect(() => {
     loadStay()
@@ -31,12 +51,6 @@ export default function StayDetails() {
       // showErrorMsg('Cannot load stay')
     }
   }
-
-  function createNewOrderID() {
-    const newOrderId = utilService.makeId();
-    setOrderId(newOrderId);
-    setShowDatePicker(!showDatePicker);
-  };
 
   function onAddPopupDate() {
     setPopupDate(!isPopupDate)
@@ -70,10 +84,6 @@ export default function StayDetails() {
                 4 reviews
               </div>
             </div>
-
-            {/* <div className="reservation-display">
-          961
-        </div> */}
 
             <hr />
 
@@ -117,11 +127,11 @@ export default function StayDetails() {
 
               <button onClick={onAddPopupDate} className="check-in-btn-reservation">
                 CHECK-IN
-                <span>Add date</span>
+                <span>{checkIn ? new Date(checkIn).toLocaleDateString('en-US') : "Add Date"}</span>
               </button>
               <button onClick={onAddPopupDate} className="check-out-btn-reservation">
                 CHECKOUT
-                <span>Add date</span>
+                <span>{checkOut ? new Date(checkOut).toLocaleDateString('en-US') : "Add Date"}</span>
               </button>
 
               <div className={isPopupDate ? "popup-date" : "not-popup-date"} >
@@ -141,25 +151,27 @@ export default function StayDetails() {
 
             <div>
               <Link to={"reservation"}>
-                <button className="reserve-btn">Reserve</button>
+                <button onClick={onSaveOrder} className="reserve-btn">Reserve</button>
               </Link>
             </div>
 
-            <div className="order-reservation-details">
-              <div className="total-night-details">
-                <span className="span1-details-order">₪{stay.price + " "}x{" " + " nights"}</span>
-                <span className="span2-details-order">₪{stay.price}</span>
+            {numberOfDays > 0 && <div>
+              <div className="order-reservation-details">
+                <div className="total-night-details">
+                  <span className="span1-details-order">₪{stay.price + " "}x{numberOfDays + " nights"}</span>
+                  <span className="span2-details-order">₪{stay.price * numberOfDays}</span>
+                </div>
+                <div className="total-night-details">
+                  <span className="span1-details-order"> Cleaning fee </span>
+                  <span className="span2-details-order"> ₪100</span>
+                </div>
               </div>
-              <div className="total-night-details">
-                <span className="span1-details-order"> Cleaning fee </span>
-                <span className="span2-details-order"> ₪100</span>
+              <hr />
+              <div className="total-details">
+                <span className="span1-details-order"> Total </span>
+                <span className="span2-details-order"> ₪{stay.price * numberOfDays + 100}</span>
               </div>
-            </div>
-            <hr />
-            <div className="total-details">
-              <span className="span1-details-order"> Total </span>
-              <span className="span2-details-order"> ₪{stay.price * numberOfDays + 100}</span>
-            </div>
+            </div>}
           </div>  {/* end of the reservation */}
 
         </section>

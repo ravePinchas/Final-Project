@@ -1,10 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 import { Link, useParams } from 'react-router-dom'
-
+import { stayService } from '../services/stay.service'
 
 
 export default function StayReservation() {
+
+  const months = ['January', 'Februar', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
   const { stayId } = useParams()
+
+  const currentOrder = useSelector(storeState => storeState.orderModule.currentOrder)
+  const numberOfDays = useSelector(storeState => storeState.orderModule.numberOfDays)
+
+  const [startMonth, setStartMonth] = useState()
+  const [startDay, setStartDay] = useState()
+  const [endMonth, setEndMonth] = useState()
+  const [endDay, setEndDay] = useState()
+
+  const [stay, setStay] = useState()
+
+  async function getStay() {
+    try {
+      const stay = await stayService.getById(stayId)
+      setStay(stay)
+      console.log('stay: ', stay);
+    } catch (err) {
+      // showErrorMsg('Cannot load stay')
+    }
+  }
+
+  // function getDates() {
+  //   setStartMonth(new Date(currentOrder.startDate).toLocaleDateString('en-US', { month: 'short' }))
+  //   setStartDay(new Date(currentOrder.startDate).getDate())
+  //   setEndMonth(new Date(currentOrder.endDate).toLocaleDateString('en-US', { month: 'short' }))
+  //   setEndDay(new Date(currentOrder.endDate).getDate())
+  // }
+
+  // useEffect(() => {
+  //   getDates()
+  // }, [currentOrder])
+
+  useEffect(() => {
+    getStay()
+  }, [])
+
+  if (!stay) return
   return (
     <section>
       <div className="confirm-reserve">
@@ -30,16 +71,16 @@ export default function StayReservation() {
               <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: "block", height: "32px", width: "32px", fill: "rgb(227, 28, 95)", stroke: "currentcolor" }}><g stroke="none"><path d="M24.556 8H9a1 1 0 0 0-.993.883L8 9v15.556a1 1 0 0 0 .206.608l.087.1 17.213 17.213a1 1 0 0 0 1.32.083l.094-.083L42.477 26.92a1 1 0 0 0 .083-1.32l-.083-.094L25.263 8.293a1 1 0 0 0-.575-.284L24.556 8z" fillOpacity=".2"></path><path d="M24.556 4A5 5 0 0 1 27.9 5.282l.192.182 17.213 17.214a5 5 0 0 1 .172 6.89l-.172.18L29.75 45.306a5 5 0 0 1-6.89.172l-.181-.172L5.464 28.092a5 5 0 0 1-1.457-3.271L4 24.556V9a5 5 0 0 1 4.783-4.995L9 4h15.556zm0 2H9a3 3 0 0 0-2.995 2.824L6 9v15.556a3 3 0 0 0 .743 1.977l.136.145L24.092 43.89a3 3 0 0 0 4.099.135l.144-.135L43.89 28.335a3 3 0 0 0 .135-4.1l-.135-.143L26.678 6.879a3 3 0 0 0-1.924-.872L24.556 6zM13 10a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></g></svg>
             </div>
           </div>
-          <div className="your-trip-reservation">
+          <div className="your-trip-reservasion">
             <h2>Your trip</h2>
           </div>
           <div className="dates-body-left-reservation">
             <h3>Dates</h3>
-            <div>month [day] - month [day] </div>
+            {/* <div> {startMonth + " " + startDay} - {startMonth !== endMonth ? endMonth : ""} {" " + endDay} </div> */}
           </div>
           <div className="guests-body-left-reservation">
             <h3>Guests</h3>
-            <div>[num] guest </div>
+            <div> 1 guest </div>
           </div>
           <hr />
           <div className="how-to-pay-body-left-reservation">
@@ -103,7 +144,38 @@ export default function StayReservation() {
         </div>
 
         <div className="body-right-reservation-page">
-
+          <div className='header-div-reservasion'>
+            <div>
+              <img src={stay.imgUrls[0]} alt="" />
+            </div>
+            <div className='header-div-reservasion-middle'>
+              <div className='first-middle-header-reservasion'>
+                <span>Entire place</span>
+              </div>
+              <div className='secound-middle-header-reservasion'>
+                <span>{stay.name}</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div className='price-details-reservasion'>
+            <h2>Price details</h2>
+          </div>
+          <div className="order-reservation-details">
+            <div className="total-night-details">
+              <span className="span1-details-order">₪{stay.price + " "}x{numberOfDays + " nights"}</span>
+              <span className="span2-details-order">₪{stay.price * numberOfDays}</span>
+            </div>
+            <div className="total-night-details">
+              <span className="span1-details-order"> Cleaning fee </span>
+              <span className="span2-details-order"> ₪100</span>
+            </div>
+          </div>
+          <hr />
+          <div className="total-details">
+            <span className="span1-details-order"> Total </span>
+            <span className="span2-details-order"> ₪{stay.price * numberOfDays + 100}</span>
+          </div>
         </div>
       </div>
 

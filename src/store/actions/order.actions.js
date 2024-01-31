@@ -1,3 +1,6 @@
+import { orderService } from '../../services/order.service'
+import { store } from "../store";
+
 export const setCheckInDate = date => ({
   type: 'SET_CHECKIN_DATE',
   payload: date
@@ -22,3 +25,25 @@ export const setOrderID = (newID) => ({
   type: 'SET_ORDER_ID',
   payload: newID
 });
+
+export async function saveOrder(order, isOrderNull) {
+  try {
+      const type = order._id ? "UPDATE_ORDER" : "ADD_ORDER"
+      const orderToSave = isOrderNull ?  await orderService.createOrderStorage(order) : await orderService.save(order)
+    
+      store.dispatch({ type, order: orderToSave })
+  } catch (err) {
+      console.log('Had issues loading orders', err);
+      throw err
+  }
+}
+
+export async function updateCurrentOrder(order) {
+  try {
+      const type = "UPDATE_CURRENT_ORDER"
+      store.dispatch({ type, order})
+  } catch (err) {
+      console.log('Had issues loading orders', err);
+      throw err
+  }
+}

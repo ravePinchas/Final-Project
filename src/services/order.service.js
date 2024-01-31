@@ -4,11 +4,12 @@ import { utilService } from './util.service.js'
 import { staysList } from './stay-list.js'
 // import {stayServiceList} from "./stayList.service.js"
   
-export const stayService = {
+export const orderService = {
     query,
     save,
     remove,
     getById,
+    createOrderStorage,
 }
 
 const STORAGE_KEY = 'orders'
@@ -31,5 +32,9 @@ async function save(order) {
     } else {
         return storageService.post(STORAGE_KEY, order)
     }
+}
+
+async function createOrderStorage(order){
+    utilService.saveToStorage(STORAGE_KEY, order)
 }
 
