@@ -34,8 +34,6 @@ export default function StayDetails() {
       },
     }
     saveOrder(newOrder)
-    console.log("onSaveOrder");
-    // updateCurrentOrder(newOrder)
   }
 
   useEffect(() => {
@@ -68,6 +66,8 @@ export default function StayDetails() {
           <img className="img-details1" src={stay.imgUrls[0]} alt="" />
           <img className="img-details2" src={stay.imgUrls[1]} alt="" />
           <img className="img-details3" src={stay.imgUrls[2]} alt="" />
+          {/* <img className="img-details4" src={stay.imgUrls[3]} alt="" />
+          <img className="img-details5" src={stay.imgUrls[4]} alt="" /> */}
           {/* <button>show all photos</button> */}
         </div>
 
@@ -76,12 +76,12 @@ export default function StayDetails() {
             <div className="name-display2">
               <span>Entire stay in {stay.name}</span>
               <div>
-                {stay.capacity} guests
+                {/* {stay.capacity} guests */}
               </div>
               <div>
-                Rated 5.0 out of 5 stars.
+                {/* Rated 5.0 out of 5 stars.
                 5.0
-                4 reviews
+                4 reviews */}
               </div>
             </div>
 

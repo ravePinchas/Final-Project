@@ -13,6 +13,8 @@ export default function StayReservation() {
   const currentOrder = useSelector(storeState => storeState.orderModule.currentOrder)
   const numberOfDays = useSelector(storeState => storeState.orderModule.numberOfDays)
 
+  console.log("curerent order: ", currentOrder);
+
   const [startMonth, setStartMonth] = useState()
   const [startDay, setStartDay] = useState()
   const [endMonth, setEndMonth] = useState()
@@ -30,16 +32,17 @@ export default function StayReservation() {
     }
   }
 
-  // function getDates() {
-  //   setStartMonth(new Date(currentOrder.startDate).toLocaleDateString('en-US', { month: 'short' }))
-  //   setStartDay(new Date(currentOrder.startDate).getDate())
-  //   setEndMonth(new Date(currentOrder.endDate).toLocaleDateString('en-US', { month: 'short' }))
-  //   setEndDay(new Date(currentOrder.endDate).getDate())
-  // }
+  function getDates() {
+    setStartMonth(new Date(currentOrder.startDate).toLocaleDateString('en-US', { month: 'short' }))
+    setStartDay(new Date(currentOrder.startDate).getDate())
+    setEndMonth(new Date(currentOrder.endDate).toLocaleDateString('en-US', { month: 'short' }))
+    setEndDay(new Date(currentOrder.endDate).getDate())
+  }
 
-  // useEffect(() => {
-  //   getDates()
-  // }, [currentOrder])
+  useEffect(() => {
+    if (!currentOrder) { return }
+    getDates()
+  }, [currentOrder])
 
   useEffect(() => {
     getStay()
@@ -76,7 +79,7 @@ export default function StayReservation() {
           </div>
           <div className="dates-body-left-reservation">
             <h3>Dates</h3>
-            {/* <div> {startMonth + " " + startDay} - {startMonth !== endMonth ? endMonth : ""} {" " + endDay} </div> */}
+            <div> {startMonth + " " + startDay} - {startMonth !== endMonth ? endMonth : ""} {" " + endDay} </div>
           </div>
           <div className="guests-body-left-reservation">
             <h3>Guests</h3>

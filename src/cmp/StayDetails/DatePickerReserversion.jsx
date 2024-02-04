@@ -23,17 +23,14 @@ export default function DatePickerReserversion({ onAddPopupDate }) {
       }
       return 0;
     };
-    console.log('Hi');
     dispatch(setNumberOfDays(calculateNumberOfDays()));
   }, [checkInDate, checkOutDate, dispatch]);
 
   const handleCheckInChange = date => {
-    console.log(date);
     dispatch(setCheckInDate(date))
   };
 
   const handleCheckOutChange = date => {
-    console.log(date);
     dispatch(setCheckOutDate(date));
     if (checkInDate) {
       onAddPopupDate()

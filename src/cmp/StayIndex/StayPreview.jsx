@@ -9,17 +9,17 @@ export default function StayPreview({ stay }) {
         <img src={stay.imgUrls[0] || "../images/black.png"} alt="" />
       </Link>
       <div className="stay-details-list">
-        <div>
+        <div className="stay-list-name">
           {stay.name}
         </div>
-        <div>
-          added ____ weeks ago
+        <div className='stay-list-added'>
+          {stay.added}
         </div>
-        <div>
-          month __
+        <div className='stay-list-month'>
+          {stay.dates}
         </div>
-        <div>
-          {stay.price + " "} night
+        <div className='stay-list-price'>
+          ₪{stay.price + " "} night
         </div>
       </div>
     </section>

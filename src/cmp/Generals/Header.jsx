@@ -18,14 +18,13 @@ export default function Header() {
     if (location.pathname.includes('/reservation/')) {
       setActiveSearch(true)
     }
-
   }
 
   return (
     <>
       <header className={location.pathname.includes('/stay/') ? 'header-display-details' : 'header-display'}>
         <Logo onActiveSearch={onActiveSearch}></Logo>
-        <SearchStayBar onActiveSearch={onActiveSearch}></SearchStayBar>
+        {!activeSearch && <SearchStayBar onActiveSearch={onActiveSearch}></SearchStayBar>}
         <Profile></Profile>
       </header >
       <section className={activeSearch ? "active-search-stay-bar" : "not-active-search-stay-bar"}>
