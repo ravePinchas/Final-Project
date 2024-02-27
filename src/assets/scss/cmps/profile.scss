@@ -69,3 +69,142 @@
     margin-right: auto;
   }
 }
+
+.user-btn-profile{
+  padding-block: 8px;
+  padding-right: 8px;
+  padding-left: 14px;
+  display: flex;
+  align-items: center;
+  border: solid 1px rgb(221, 221, 221);
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+
+  img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 14px;
+  }
+}
+
+.popup-profile {
+  right: 0;
+  position: absolute;
+  top: 50px;
+  z-index: 10000;
+  border: 0.677px solid rgb(176, 176, 176);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background-color: white;
+  margin-top: 8px;
+  padding-top: 8px;
+  width: 240px;
+  color: rgb(34, 34, 34);
+  font-weight: 400;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  div{
+    padding-block: 12px;
+    padding-inline: 16px;
+  }
+}
+
+.not-popup-profile {
+  width: 660px;
+  // height: 320px;
+  right: 0;
+  position: absolute;
+  top: 50px;
+  z-index: 10000;
+  display: flex;
+  visibility: hidden;
+}
+
+.popup-log {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // width: 50%;
+  background-color: white;
+  visibility: visible;
+  width: 520px;
+  border: 0.677px solid rgb(176, 176, 176);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+
+  header{
+    padding-inline: 24px;
+    display: flex;
+    // height: 63px;
+    padding-block: 24px;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    button{
+      background-color: white;
+      border: none;
+      cursor: pointer;
+      margin-right: auto;
+    }
+    span{
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+.not-popup-log {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  visibility: hidden;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-group button:hover {
+  background-color: #0056b3;
+}
+
+.welcome-message {
+  margin-left: auto;
+  margin-right: auto;
+}

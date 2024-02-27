@@ -4,6 +4,8 @@ export const storageService = {
     post,
     put,
     remove,
+    postUser,
+    getUser
 }
 
 function query(entityType, delay = 200) {
@@ -18,6 +20,15 @@ function get(entityType, entityId) {
         return entity
     })
     
+}
+
+function getUser(entityType, entityEmail) {
+    return query(entityType).then(entities => {
+        const user = entities.find(entity => entity.email === entityEmail);
+        // if (!user) throw new Error(`User not found with email: ${entityEmail}`);
+        console.log("user: ", user);
+        return user;
+    });
 }
 
 function post(entityType, newEntity) {
@@ -62,4 +73,12 @@ function _makeId(length = 5) {
         text += possible.charAt(Math.floor(Math.random() * possible.length))
     }
     return text
+}
+
+function postUser(entityType, newEntity) {
+    return query(entityType).then(entities => {
+        entities.push(newEntity)
+        _save(entityType, entities)
+        return newEntity
+    })
 }

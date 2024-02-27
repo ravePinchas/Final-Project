@@ -3,7 +3,9 @@ export const utilService = {
     makeId,
     saveToStorage,
     loadFromStorage,
-    animateCSS
+    animateCSS,
+    saveUserToStorage,
+    loadUserFromStorage,
 }
 
 function makeId(length = 5) {
@@ -21,6 +23,17 @@ function saveToStorage(key, value) {
 
 function loadFromStorage(key, defaultValue = null) {
     var value = localStorage[key] || defaultValue;
+    return JSON.parse(value);
+}
+
+// Function to save user data to localStorage using the email as the key
+function saveUserToStorage(email, user) {
+    localStorage[email] = JSON.stringify(user);
+}
+
+// Function to load user data from localStorage using the email as the key
+function loadUserFromStorage(email, defaultValue = null) {
+    var value = localStorage[email] || defaultValue;
     return JSON.parse(value);
 }
 
