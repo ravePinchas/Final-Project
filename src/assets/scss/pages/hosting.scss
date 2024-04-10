@@ -1,0 +1,21 @@
+.hosting-container{
+    margin: 12px;
+    text-align: center;
+    font-size: 34px;
+}
+
+.body-hosting{
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    h2{
+        font-size: 30px;
+        margin-right: 12px;
+    }
+    input{
+        margin-right: 12px;
+    }
+    button{
+        background-color: rgb(150, 47, 47);
+    }
+}

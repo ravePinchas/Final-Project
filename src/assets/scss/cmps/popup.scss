@@ -1,0 +1,51 @@
+
+.login-popup-container {
+    position: relative;
+  }
+  
+  .register-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-popup h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .register-popup form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-popup label {
+    margin-bottom: 5px;
+  }
+  
+  .register-popup input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .register-popup button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .register-popup button:hover {
+    background-color: #0056b3;
+  }

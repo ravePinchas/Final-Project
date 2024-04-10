@@ -3,6 +3,7 @@ import StayIndex from "./pages/StayIndex";
 import StayDetails from "./pages/StayDetails";
 import Header from "./cmp/Generals/Header";
 import StayReservation from "./pages/StayReservation";
+import Hosting from "./pages/Hosting";
 
 
 export function App() {
@@ -14,6 +15,7 @@ export function App() {
                 <Route path="/" element={<StayIndex />} />
                 <Route path="/stay/:stayId" element={<StayDetails />} />
                 <Route path="/stay/:stayId/reservation" element={<StayReservation />} />
+                <Route path="/hosting" element={<Hosting/>}/>
             </Routes>
         </section >
     )

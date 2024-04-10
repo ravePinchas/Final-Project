@@ -109,7 +109,6 @@ export default function StayDetails() {
                     <div className="aminity-preview" key={aminity}>
                       <img src={"/images/aminities/" + aminity + ".jpg"} alt="" />
                       <span>{aminity}</span>
-
                     </div>
                   )
                 }

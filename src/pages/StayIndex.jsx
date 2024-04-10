@@ -38,6 +38,7 @@ export default function StayIndex() {
   if (!stays) return
   return (
     <section>
+      <button onClick={onAddStay}>add</button>
       <StaysTypeBar onSetFilter={onSetFilter}></StaysTypeBar>
       {/* <button onClick={onAddStay}>add stay</button> */}
       <StayList stays={stays}></StayList>

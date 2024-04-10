@@ -26,7 +26,6 @@ function getUser(entityType, entityEmail) {
     return query(entityType).then(entities => {
         const user = entities.find(entity => entity.email === entityEmail);
         // if (!user) throw new Error(`User not found with email: ${entityEmail}`);
-        console.log("user: ", user);
         return user;
     });
 }

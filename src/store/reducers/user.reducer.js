@@ -3,6 +3,7 @@ export const LOG_IN = 'LOG_IN';
 export const ADD_USER = 'ADD_USER';
 export const UPDATE_USER = 'UPDATE_USER';
 export const ADD_USERS = 'ADD_USERS';
+export const HELLO = 'HELLO';
 
 const initialState = {
   users: [
@@ -29,11 +30,12 @@ const initialState = {
 
 export function userReducer (state = initialState, action) {
   switch (action.type) {
-    case ADD_USERS:
-      return {
+    case ADD_USER:
+      return{
         ...state,
-        users: action.payload, // Add the users from the action payload
-      };
+        users: [...state.users, action.userToSave],
+        currentUser: {...action.userToSave},
+    };
     case SIGN_UP:
       return {
         ...state,
@@ -41,13 +43,9 @@ export function userReducer (state = initialState, action) {
         currentUser: action.payload
       };
     case LOG_IN:
-      const { email, password } = action.payload;
-      const user = state.users.find(
-        (user) => user.email === email && user.password === password
-      );
-      return {
+      return{
         ...state,
-        currentUser: user ? { ...user } : null,
+        currentUser: {...action.user},
       };
     case UPDATE_USER:
       const updatedUsers = state.users.map((user) =>
@@ -57,13 +55,11 @@ export function userReducer (state = initialState, action) {
         ...state,
         users: updatedUsers,
       };
-    case ADD_USER:
-      return {
-        ...state,
-        users: [...state.users, action.user],
-      };
+    case HELLO:
+      console.log("hello");
+      return state
     default:
-      return state;
+      return state
   }
 };
 
