@@ -1,0 +1,722 @@
+[
+  {
+    "_id": "s101",
+    "name": "Tel Aviv-yafo, israel",
+    "type": "Amazing views",
+    "imgUrls": [
+      "/images/stay01.webp",
+      "/images/stay01d1.webp",
+      "/images/stay01d2.webp",
+      "/images/stay01d3.webp",
+      "/images/stay01d4.webp"
+    ],
+    "price": 995,
+    "added": "Added 10 weeks ago",
+    "dates": "Feb 25 - Mar 1",
+    "summary": "This lovely Relaxing apartment is situated in the central part of Tel Aviv with stunning sea views right across from Gordon beach, next to all the seaside hotels and Tel Aviv beautiful boardwalk. located close to restaurants, bars, cafes, a gym, a public pool, supermarkets, a pharmacy, 24 hour convenience stores, and other attractions. location for your next vacation in Tel Aviv. You can alos find public transportation, bicycle, electric scooter sharing services and paid parking nearby.\n\nA stunning and ventilated apartment on the third floor, an 80-meter apartment. There is no elevator. The apartment is very decorated, with many real plants in the apartment, the design, the view and the plants give a combination of the perfect vacation.\n\nThe apartment is on the 3rd floor without an elevator\n    \n- You can enjoy a private and well-equipped gym in the apartment. It is important to know that the use of fitness equipment is the sole responsibility of the user.\n    \n- Enjoy a fully equipped kitchen, a filtered, hot and cold water bar. Quality coffee machine.\n    \n- The apartment is close to all the attractions of Tel Aviv, a minute's walk to the beaches, popular restaurants, bars and the supermarket.\n    \nEnjoyment in the apartment is guaranteed!\n  \n*The apartment has private equipment of people who live in the apartment.\nKeep their privacy, don't open locked cabinets and don't tag them with their personal belongings. Thanks\n    \nNon Israeli residents are not subject to VAT, for compliance reasons you will be asked to send a valid passport photo and your tourist visa (B2, B3, or B4) upon your arrival.\nIn the case you fail to send your B2 entry visa, 17% VAT will be added to your reservation.\n\n    *בעלי דרכון ישראלי מחוייבים בתוספת 17% \n    \nThe entire property is available for guests with privacy guaranteed.\n    \nThe apartment Is in a residential building and it's really important that our guests keep the peace and quiet of our neighbors.\nNot meant for parties but a quiet relaxing vacation.\n  \nThe apartment Is in a residential building and it's really important that our guests keep the peace and quiet of our neighbors.\nNot meant for parties but a quiet relaxing vacation.\n    \nIf you have a car - there is an option to check if the private parking is available. ask us",
+    "capacity": 6,
+    "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+    ],
+    "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+    ],
+    "host": {
+      "_id": "u101",
+      "fullname": "Davit Pok",
+      "imgUrl": "/images/host/host01.webp"
+    },
+    "loc": {
+      "country": "Israel",
+      "countryCode": "PT",
+      "city": "Tel Aviv",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+    },
+    "reviews": [
+      {
+        "id": "madeId",
+        "txt": "Very helpful hosts. Cooked traditional...",
+        "rate": 4,
+        "by": {
+          "_id": "u102",
+          "fullname": "user2",
+          "imgUrl": "/img/img2.jpg"
+        }
+      }
+    ],
+    "likedByUsers": [
+      "mini-user"
+    ]
+  },
+  {
+    "_id": "s102",
+    "name": "Dalaman, Turkey",
+    "type": "Cabins",
+    "imgUrls": [
+      "/images/stay02.webp",
+      "/images/stay02d1.webp",
+      "/images/stay02d2.webp",
+      "/images/stay02d3.webp",
+      "/images/stay02d4.webp"
+    ],
+    "price": 264,
+    "added": "Added 10 weeks ago",
+    "dates": "Feb 25 - Mar 1",
+    "summary": "Karya Bungalov Villa, Dalaman Havalimanına yakınlığı ve doğa içerisinde kısmi korunaklı alanıyla size harika bir tatil deneyimi sunuyor.  Tatilinizi ferah ve şık bir yerde yapmak için hemen rezervasyon yapın.",
+    "capacity": 6,
+    "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+    ],
+    "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+    ],
+    "host": {
+      "_id": "u101",
+      "fullname": "Mehmet Muhammet",
+      "imgUrl": "/images/host/host01.webp"
+    },
+    "loc": {
+      "country": "Turkey",
+      "countryCode": "PT",
+      "city": "Dalaman",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+    },
+    "reviews": [
+      {
+        "id": "madeId",
+        "txt": "Very helpful hosts. Cooked traditional...",
+        "rate": 4,
+        "by": {
+          "_id": "u102",
+          "fullname": "user2",
+          "imgUrl": "/img/img2.jpg"
+        }
+      }
+    ],
+    "likedByUsers": [
+      "mini-user"
+    ]
+  },
+  {
+    "_id": "s103",
+    "name": "Jerusalem, Israel",
+    "type": "Chef's kitchens",
+    "imgUrls": [
+      "/images/stay06.webp",
+      "/images/stay06d1.webp",
+      "/images/stay06d2.webp",
+      "/images/stay06d3.webp",
+      "/images/stay06d4.webp"
+    ],
+    "price": 7388,
+    "added": "Added 10 weeks ago",
+    "dates": "Feb 25 - Mar 1",
+    "summary": "NEW 6 BEDROOM 5.5 BATHROOM HOME IN THE DAVID LEGACY -ACROSS FROM MAMILA- LUXURIOUS FURNISHINGS AND BEDDINGS- HIGH END APPLAINCES- CAN SLEEP 14 PEOPLE-HUGE OUTDOOR AREA WITH OUTDOOR SITTING-2 SEPARATE ENTRANCES-HIGH SPEED WIFI-PERFECT FOR FAMILIES-2 MINUTE WALK TO MAMIL SHOPS AND RESTAURANTS-5 MINUTE WALK TO OLD CITY-15 MINUTE WALK TO KOTEL",
+    "capacity": 8,
+    "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+    ],
+    "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+    ],
+    "host": {
+      "_id": "u101",
+      "fullname": "Mehmet Muhammet",
+      "imgUrl": "/images/host/host01.webp"
+    },
+    "loc": {
+      "country": "Israel",
+      "countryCode": "PT",
+      "city": "Jerusalem",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+    },
+    "reviews": [
+      {
+        "id": "madeId",
+        "txt": "Very helpful hosts. Cooked traditional...",
+        "rate": 4,
+        "by": {
+          "_id": "u102",
+          "fullname": "user2",
+          "imgUrl": "/img/img2.jpg"
+        }
+      }
+    ],
+    "likedByUsers": [
+      "mini-user"
+    ]
+  },
+  {
+    "_id": "s104",
+    "name": "Provincia di Lecce, Italy",
+    "type": "Mansions",
+    "imgUrls": [
+      "/images/stay03.webp",
+      "/images/stay03d1.webp",
+      "/images/stay03d2.webp",
+      "/images/stay03d3.webp",
+      "/images/stay03d4.webp"
+    ],
+    "price": 4313,
+    "added": "Added 10 weeks ago",
+    "dates": "Feb 25 - Mar 1",
+    "summary": "\"Welcome to Masseria Quadrelli: An Oasis of Elegance in the Heart of Salento\"\n    Located in the heart of Salento, only 10 km from Otranto and a short distance from the renowned towns of Otranto and Santa Cesarea Terme, Masseria Quadrelli is an authentic jewel immersed in a centuries-old olive grove.\n    The space\n    \"An enchanting and fragrant environment\"\n    Surrounded by a centuries-old garden populated by olive, oleanders, corbezzoli, and other Mediterranean essences, Masseria Quadrelli exudes an atmosphere of tranquility. The enveloping scent of the environment accompanies your moments of relaxation at the spectacular irregularly shaped pool, enriched by a jacuzzi that completes the wellness experience.\n    Guest access\n    \"Exclusivity and Confidentiality\"\n    Masseria Quadrelli is the ideal place for groups of friends or families looking for an authentic vacation or wanting to celebrate a special occasion. Here, you'll enjoy utmost intimacy in an environment that will make you feel at home, without sacrificing the comfort and exclusive amenities typical of a luxury hotel.\n    Other things to note\n    \"For Unforgettable Events\"\n    La Masseria Quadrelli is more than a dwelling; it is an intimate and luxurious space where you can celebrate important events of your life. Whether it's a wedding or another special occasion, here you can fully experience the authenticity of our land, surrounded by the magic of this exclusive place.\n    Welcome to Masseria Quadrelli, where elegance blends with tradition to create unforgettable memories.",
+    "capacity": 16,
+    "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+    ],
+    "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+    ],
+    "host": {
+      "_id": "u101",
+      "fullname": "Mehmet Muhammet",
+      "imgUrl": "/images/host/host01.webp"
+    },
+    "loc": {
+      "country": "Italy",
+      "countryCode": "PT",
+      "city": "Lecce",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+    },
+    "reviews": [
+      {
+        "id": "madeId",
+        "txt": "Very helpful hosts. Cooked traditional...",
+        "rate": 4,
+        "by": {
+          "_id": "u102",
+          "fullname": "user2",
+          "imgUrl": "/img/img2.jpg"
+        }
+      }
+    ],
+    "likedByUsers": [
+      "mini-user"
+    ]
+  },
+  {
+    "_id": "s105",
+    "name": "Bajagić, Croatia",
+    "type": "Mansions",
+    "added": "Added 10 weeks ago",
+    "dates": "Feb 25 - Mar 1",
+    "imgUrls": [
+      "/images/stay04.webp",
+      "/images/stay04d1.webp",
+      "/images/stay04d2.webp",
+      "/images/stay04d3.webp",
+      "/images/stay04d4.webp"
+    ],
+    "price": 2603,
+    "summary": "Luxury Villa Arya-77sqm heated pool, hot tub,sauna\n    \n  Very comfortable and modern accommodation, with stunning views of Cetina river valley, only 10km from the town Sinj\n  Villa Arya is a newly built and very spacious property that offers a very luxurious 480sqm interior organized on 3 levels, located on a 1.700sqm plot with panoramic views of the Cetina river valley and unspoiled nature, offering absolute privacy. Villa is fully air conditioned and covered with free WiFi. It offers 6 Bedrooms so it can accommodate 12 people, 3 Kitchen and Living areas, 7 Bathrooms, a Gym, a Finnish sauna, a Media area, a Pool table (Billiard), a Swimming pool, Whirlpool, Basketball, Volleyball, a Children playground, Table tennis, Table soccer, Summer kitchen and several Lounge areas. There are 8 parking places, 4 secured on the private plot and 4 next to it. The parking lot and entrance are covered with a video-surveillance system.The car is recommended.\n  Here is a detailed description of what is offered only for you:\n \n  * The OUTDOOR offers: A private and heated swimming pool 11m x 5m with an attached shallow pool for kids 8m x 2.8m and 0.4m depth, both heated and with the no-Chlorine system. There is also a whirlpool for 6-8 people attached to the pool. A spacious sun deck area with 12 sun deck chairs, an outdoor shower, a fully equipped summer kitchen with barbecue and with TV, a covered dining area, a separate toilet, and a few lounge areas. A few steps down takes you to the children's playground with a wooden house, swings, and a slide. Next to it is a Basketball court and also a volleyball sand court.\n    \n  * The FIRST FLOOR is connected with an indoor and outdoor staircase and offers a 60sqm living area that is fully air-conditioned and equipped with all the needed amenities in the kitchen, a spacious dining area, and a living room with a flat-screen TV and a balcony overviewing the valley and pool area, there is also a separate family bathroom with a shower. Bedroom No1 (17.5sqm) with king-size bed 180cm x 200cm, A/C, TV, en-suite bathroom (3.5sqm) with shower and a self-standing bathtub in the bedroom. Bedroom No2 (10.5sqm) with a queen size bed 160cm x 200cm, A/C, TV, and a family bathroom (3.7sqm) with a shower next door.\n    \n  * The GROUND FLOOR offers 4 en-suite bedrooms and a small living area open concept with a TV and sofas and a direct approach to the sun deck area. Bedroom No3 (17.5sqm) with king-size bed 180cm x 200cm, A/C, TV, en-suite bathroom (4sqm) with shower and a bathtub, and direct approach to the pool area. Bedroom No4 (13.5sqm) queen size bed 160cm x 200cm, A/C, TV, en-suite bathroom (3.7sqm) with a shower, and direct approach to the pool area. Bedroom No5 (13sqm) with two single beds 90cm x 200cm, A/C, and a family bathroom (3,2sqm) with shower next door. Bedroom No6 (10.5sqm) with two single beds 90cm x 200cm, A/C, en-suite bathroom (4sqm) with a shower.\n    \n  * The LOWER GROUND FLOOR is approached by the internal staircase and offers a Media area (mini cinema area 12sqm) with a wooden sitting area, a TV, and PlayStation 5, next to it is a fully equipped Gym (32sqm) with A/C a Finnish sauna with a shower is next to the gym. There is also a spacious socializing area, like a fun zone with a fully equipped kitchen, a dining area, a Billiard (Pool table), Table tennis, and a Table Soccer and a separate bathroom with a shower. There is also a laundry (2.9sqm) with a washing machine and a dryer near the staircase.\n    \n  This villa is so nicely decorated and well organized to be a perfect option for more generation families or a group of friends to have a perfect vacation in this lovely rural environment. We are looking forward to hosting you on this amazing property. NOTE: youth groups are not allowed, so the minimum age for renting this villa is 25 years. Pets are also not allowed.\n    \n  Looking forward to your inquiry\n    \n  Your Ferie Home team\n    \n  Additional offerings: Washer/Dryer, Ironing board, Cable/Satellite TV, DVD player, Stereo, CD Player, Pool table, Ping pong table, High-speed Internet, Oven, Espresso machine, Vitro ceramic, Shared kitchen, Balcony, Roofed Patio/deck/Terrace, Sauna - private, Hot Tub - private, Shower, Separate WC, Children are welcomed, Mountain view, River view, Private Garden, Internet Enabled TV, Billiards , Cycling , Darts , Game room , Horse riding , Other sports , Table tennis , Hot spring bath , Hot tub , Steam room , Bathroom, Toalet, Bed, Bedroom, Living room, Seating area, Dining area, Living area, Wine cellar, Electricity, Water, Heated pool, Infinity pool, Safe, Private Entrance",
+    "capacity": 12,
+    "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+    ],
+    "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+    ],
+    "host": {
+      "_id": "u101",
+      "fullname": "Mehmet Muhammet",
+      "imgUrl": "/images/host/host01.webp"
+    },
+    "loc": {
+      "country": "Croatia",
+      "countryCode": "PT",
+      "city": "Bajagić",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+    },
+    "reviews": [
+      {
+        "id": "madeId",
+        "txt": "Very helpful hosts. Cooked traditional...",
+        "rate": 4,
+        "by": {
+          "_id": "u102",
+          "fullname": "user2",
+          "imgUrl": "/img/img2.jpg"
+        }
+      }
+    ],
+    "likedByUsers": [
+      "mini-user"
+    ]
+  },
+  {
+    "_id": "s106",
+    "name": "Bajagić, Croatia",
+    "type": "Mansions",
+    "imgUrls": [
+      "/images/stay05.webp",
+      "/images/stay05d1.webp",
+      "/images/stay05d2.webp",
+      "/images/stay05d3.webp",
+      "/images/stay05d4.webp"
+    ],
+    "price": 4884,
+    "added": "Added 10 weeks ago",
+    "dates": "Feb 25 - Mar 1",
+    "summary": "Discover the perfect coastal retreat in Doroufi. This spacious villa features 7 bedrooms bathrooms, stunning indoor and outdoor living areas, a tennis court, and an infinite pool! Immerse yourself in Greek history with nearby excursions to Ancient Epidaurus, Nafplion, and Mycenae. Enjoy the cosmopolitan ambience of Spetses and Hydra, or relax on the beautiful sandy beach just steps away, your Greek holiday dreams come true.\n\nThe magnificent villa Mamasana, offers an exquisite coastal retreat with a touch of luxury. The villa boasts stunning indoor and outdoor living areas, providing a seamless blend of elegance and comfort. With 7 spacious bedrooms and 7.5 bathrooms, this villa can accommodate large groups of up to 16+ guests.\n    \nThe interior is thoughtfully designed, reflecting Greek charm and contemporary style. The open-concept kitchen is fully equipped, allowing guests to prepare their favourite meals. The villa also features a dedicated workspace with Wi-Fi, ideal for those who need to stay connected while enjoying their vacation.\n    \nOutdoors, you'll discover a captivating infinity pool overlooking the bay, where you can take a refreshing dip or simply soak in the breathtaking views. The villa also offers a tennis court, perfect for sports enthusiasts looking to engage in friendly matches.\n    \nLocated just steps away from a beautiful sandy beach, this coastal paradise allows guests to indulge in sun, sand, and sea. For those interested in Greek history, nearby excursions to Ancient Epidaurus, Nafplion, and Mycenae provide a fascinating glimpse into the past.\n    \nOur team is dedicated to ensuring a memorable stay for our guests. Our commitment to hospitality shines through with prompt assistance and excellent service. With its remarkable features, convenient amenities, and idyllic location, this villa promises a truly unforgettable Greek holiday experience.\n\nImmerse yourself in an extraordinary villa experience where a pristine sandy beach awaits you right outside your doorstep. The calm and gentle waters gradually deepen to just 1 meter, only 20 meters away, creating a secure and delightful swimming environment for children. It's akin to having your very own natural swimming pool!\n    \nFurthermore, our villa presents an array of exciting athletic activities for your enjoyment. Choose from exhilarating sailing and canoeing adventures, serene sunset yoga sessions, captivating ping pong tournaments, and much more! Additionally, our full-sized tennis court effortlessly converts into a vibrant volleyball court, providing endless opportunities for leisurely fun!",
+    "capacity": 16,
+    "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+    ],
+    "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+    ],
+    "host": {
+      "_id": "u101",
+      "fullname": "Mehmet Muhammet",
+      "imgUrl": "/images/host/host01.webp"
+    },
+    "loc": {
+      "country": "Croatia",
+      "countryCode": "PT",
+      "city": "Bajagić",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+    },
+    "reviews": [
+      {
+        "id": "madeId",
+        "txt": "Very helpful hosts. Cooked traditional...",
+        "rate": 4,
+        "by": {
+          "_id": "u102",
+          "fullname": "user2",
+          "imgUrl": "/img/img2.jpg"
+        }
+      }
+    ],
+    "likedByUsers": [
+      "mini-user"
+    ]
+  },
+  {
+    "_id": "s107",
+    "name": "Herzliya, Israel",
+    "type": "National parks",
+    "imgUrls": [
+      "/images/stay07.webp",
+      "/images/stay07d1.webp",
+      "/images/stay07d2.webp",
+      "/images/stay07d3.webp",
+      "/images/stay07d4.webp"
+    ],
+    "price": 861,
+    "added": "Added 10 weeks ago",
+    "dates": "Feb 25 - Mar 1",
+    "summary": "Discover the perfect coastal retreat in Doroufi. This spacious villa features 7 bedrooms bathrooms, stunning indoor and outdoor living areas, a tennis court, and an infinite pool! Immerse yourself in Greek history with nearby excursions to Ancient Epidaurus, Nafplion, and Mycenae. Enjoy the cosmopolitan ambience of Spetses and Hydra, or relax on the beautiful sandy beach just steps away, your Greek holiday dreams come true.\n    \nThe magnificent villa Mamasana, offers an exquisite coastal retreat with a touch of luxury. The villa boasts stunning indoor and outdoor living areas, providing a seamless blend of elegance and comfort. With 7 spacious bedrooms and 7.5 bathrooms, this villa can accommodate large groups of up to 16+ guests.\n    \nThe interior is thoughtfully designed, reflecting Greek charm and contemporary style. The open-concept kitchen is fully equipped, allowing guests to prepare their favourite meals. The villa also features a dedicated workspace with Wi-Fi, ideal for those who need to stay connected while enjoying their vacation.\n    \nOutdoors, you'll discover a captivating infinity pool overlooking the bay, where you can take a refreshing dip or simply soak in the breathtaking views. The villa also offers a tennis court, perfect for sports enthusiasts looking to engage in friendly matches.\n    \nLocated just steps away from a beautiful sandy beach, this coastal paradise allows guests to indulge in sun, sand, and sea. For those interested in Greek history, nearby excursions to Ancient Epidaurus, Nafplion, and Mycenae provide a fascinating glimpse into the past.\n    \nOur team is dedicated to ensuring a memorable stay for our guests. Our commitment to hospitality shines through with prompt assistance and excellent service. With its remarkable features, convenient amenities, and idyllic location, this villa promises a truly unforgettable Greek holiday experience.\n    \nImmerse yourself in an extraordinary villa experience where a pristine sandy beach awaits you right outside your doorstep. The calm and gentle waters gradually deepen to just 1 meter, only 20 meters away, creating a secure and delightful swimming environment for children. It's akin to having your very own natural swimming pool!\n    \nFurthermore, our villa presents an array of exciting athletic activities for your enjoyment. Choose from exhilarating sailing and canoeing adventures, serene sunset yoga sessions, captivating ping pong tournaments, and much more! Additionally, our full-sized tennis court effortlessly converts into a vibrant volleyball court, providing endless opportunities for leisurely fun!",
+    "capacity": 16,
+    "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+    ],
+    "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+    ],
+    "host": {
+      "_id": "u101",
+      "fullname": "Mehmet Muhammet",
+      "imgUrls": "/images/host/host01.webp"
+    },
+    "loc": {
+      "country": "Israel",
+      "countryCode": "PT",
+      "city": "Herzliya",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+    },
+    "reviews": [
+      {
+        "id": "madeId",
+        "txt": "Very helpful hosts. Cooked traditional...",
+        "rate": 4,
+        "by": {
+          "_id": "u102",
+          "fullname": "user2",
+          "imgUrl": "/img/img2.jpg"
+        }
+      }
+    ],
+    "likedByUsers": [
+      "mini-user"
+    ]
+  },
+  {
+    "_id": "s108",
+    "name": "Anghiari, Italy",
+    "type": "Castle",
+    "imgUrls": [
+      "/images/stay08.webp",
+      "/images/stay08d1.webp",
+      "/images/stay08d2.webp",
+      "/images/stay08d3.webp",
+      "/images/stay08d4.webp"
+    ],
+    "price": 5792,
+    "added": "Build in the 16th century",
+    "dates": "May 19 - 24",
+    "summary": "Galbino is a stunning 16th century castle in the midst of nature just a few kilometres from the enchanting village of Anghiari.\nOn a hill surrounded by woods and fields, Galbino Castle is a private and exclusive place to relax, explore nature, visit the cultural attractions of the area and enjoy the Tuscan delights of food and wine. The castle is naturally cool thanks to its thick walls and features an infinity pool with spectacular countryside views.\n    \nThe Castle, which is rented out for private use, has ten bedrooms on two floors, a huge games room with billiards and a ping pong table, a large kitchen with a fireplace, two dining rooms, a library, a living room with walls covered in frescos and a small chapel which is still consecrated.\n    \nAdditionally, this historic jewel serves as a remarkably romantic venue for weddings, with its grand architecture and breathtaking vistas providing an idyllic backdrop for any couple's special day.\n    \nThe castle is surrounded by a large garden, also for the exclusive use of guests, housing the spectacular infinity pool overlooking the Tuscan countryside.\n    \nA few steps from the pool there is a comfortable changing room with a bathroom and shower. A space in the garden adjacent to the castle is fitted out for outdoor dining and cooking, complete with a barbecue available to guests.\n    \nPassed down through the generations, we have lovingly taken care of the villa, making it more and more comfortable and preserving its ancient charm.\n    \nWe hope to welcome you for a holiday, but if you need a place suitable for smart working, we have an excellent and reliable Internet connection.\n    \nThe Castle is for personal use, easily reachable by car and with ample space to park. The nearest airports are those of Florence and Rome, and the nearest railway station is that of Arezzo.\n\nBath and pool towels are provided for our guests.\nA few kilometres from the Galbino Castle there are two tennis courts (this is an external service).",
+    "capacity": 16,
+    "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+    ],
+    "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+    ],
+    "host": {
+      "_id": "u101",
+      "fullname": "Mehmet Muhammet",
+      "imgUrls": "/images/host/host01.webp"
+    },
+    "loc": {
+      "country": "Italy",
+      "countryCode": "PT",
+      "city": "Angihiari",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+    },
+    "reviews": [
+      {
+        "id": "madeId",
+        "txt": "Very helpful hosts. Cooked traditional...",
+        "rate": 4,
+        "by": {
+          "_id": "u102",
+          "fullname": "user2",
+          "imgUrl": "/img/img2.jpg"
+        }
+      }
+    ],
+    "likedByUsers": [
+      "mini-user"
+    ]
+  },
+  {
+    "_id": "s109",
+    "name": "Sinaia, Romania",
+    "type": "Castle",
+    "imgUrls": [
+      "/images/stay09.webp",
+      "/images/stay09d1.webp",
+      "/images/stay09d2.webp",
+      "/images/stay09d3.webp",
+      "/images/stay09d4.webp"
+    ],
+    "price": 2480,
+    "added": "Build in the 19th century",
+    "dates": "Feb 3 - 8",
+    "summary": "The Lucia Villa Complex entices you to discover the true meaning of chic. A charm forged by the fusion of city comfort and closeness to nature, by the traditional and the modern, the local and the cosmopolitan spirit…\n\n  Villa Domina - a petite castle built around the time Peleş was created - welcomes you with its graceful line and its tall, luminous openings. Situated right across the entrance alley that leads to Peles Castle, you will find here a universe of elegance that will unfold before your eyes as you take your first steps. The rooms offer you an oasis of serenity and comfort, and are a perfect place for your holiday.",
+    "capacity": 16,
+    "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+    ],
+    "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+    ],
+    "host": {
+      "_id": "u101",
+      "fullname": "Mehmet Muhammet",
+      "imgUrls": "/images/host/host01.webp"
+    },
+    "loc": {
+      "country": "Romania",
+      "countryCode": "PT",
+      "city": "Sinaia",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+    },
+    "reviews": [
+      {
+        "id": "madeId",
+        "txt": "Very helpful hosts. Cooked traditional...",
+        "rate": 4,
+        "by": {
+          "_id": "u102",
+          "fullname": "user2",
+          "imgUrl": "/img/img2.jpg"
+        }
+      }
+    ],
+    "likedByUsers": [
+      "mini-user"
+    ]
+  },
+  {
+    "_id": "s110",
+    "name": "Ostana, Italy",
+    "type": "Yurt",
+    "imgUrls": [
+      "/images/stay10.webp",
+      "/images/stay10d1.webp",
+      "/images/stay10d2.webp",
+      "/images/stay10d3.webp",
+      "/images/stay10d4.webp"
+    ],
+    "price": 786,
+    "added": "2,764 kilometers away",
+    "dates": "Feb 4 - 9",
+    "summary": "This space is so amazing that you won't be easy to forget.\nLive a unique experience of relaxation, in an original yurt, with an indoor stove for winter days, en-suite bathroom.\nBreathtaking views of Monviso and our Alpaca and our Capre Cashmere that graze a few meters from yurts.\nBreakfast is taken to you in a large basket.\nAll completed by the heated Finnish bathtub with stove (for a fee). Possibility to eat at our family farm\n\nthere are 4 yurts. Each one measures 20 square meters.\nThey are located about 20 meters from each other\nThe decor is completely custom made of fine wood.\nThey have en-suite bathrooms with shower.\nAbility (for a fee) to use the outdoor Finnish tub, Monviso view\n\nyurts are accessed directly from the free parking of our property\n\nfor a unforgettable couple's experience, 1650 meters high\npossibility to use the Finnish outdoor tub with hot water (for a fee), weather conditions permitting. You must request it at the time of booking",
+    "capacity": 16,
+    "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+    ],
+    "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+    ],
+    "host": {
+      "_id": "u101",
+      "fullname": "Mehmet Muhammet",
+      "imgUrls": "/images/host/host01.webp"
+    },
+    "loc": {
+      "country": "Italy",
+      "countryCode": "PT",
+      "city": "Ostana",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+    },
+    "reviews": [
+      {
+        "id": "madeId",
+        "txt": "Very helpful hosts. Cooked traditional...",
+        "rate": 4,
+        "by": {
+          "_id": "u102",
+          "fullname": "user2",
+          "imgUrl": "/img/img2.jpg"
+        }
+      }
+    ],
+    "likedByUsers": [
+      "mini-user"
+    ]
+  },
+  {
+    "_id": "s111",
+    "name": "Cotia, Brazil",
+    "type": "Room",
+    "imgUrls": [
+      "/images/stay11.webp",
+      "/images/stay11d1.webp",
+      "/images/stay11d2.webp",
+      "/images/stay11d3.webp",
+      "/images/stay11d4.webp"
+    ],
+    "price": 207,
+    "added": "Stay with Roberta",
+    "dates": "Jul 15 - 20",
+    "summary": "Located close to the Tibetan Buddhist temple Odsal Ling, Toca is a space of retreat for those who wish to be near Sao Paulo and still have a good connection with nature. A house, built of wooden base, brick and glass is surrounded by a green field of 5000 m2 where, over the last 20 years,  it has being planted various species of fruit trees and ornamental plants.",
+    "capacity": 16,
+    "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+    ],
+    "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+    ],
+    "host": {
+      "_id": "u101",
+      "fullname": "Mehmet Muhammet",
+      "imgUrls": "/images/host/host01.webp"
+    },
+    "loc": {
+      "country": "Italy",
+      "countryCode": "PT",
+      "city": "Ostana",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+    },
+    "reviews": [
+      {
+        "id": "madeId",
+        "txt": "Very helpful hosts. Cooked traditional...",
+        "rate": 4,
+        "by": {
+          "_id": "u102",
+          "fullname": "user2",
+          "imgUrl": "/img/img2.jpg"
+        }
+      }
+    ],
+    "likedByUsers": [
+      "mini-user"
+    ]
+  },
+  {
+    "_id": "s112",
+    "name": "İçmeler, Turkey",
+    "type": "Farm",
+    "imgUrls": [
+      "/images/stay12.webp",
+      "/images/stay12d1.webp",
+      "/images/stay12d2.webp",
+      "/images/stay12d3.webp",
+      "/images/stay12d4.webp"
+    ],
+    "price": 1489,
+    "added": "1,007 kilometers away",
+    "dates": "Feb 4 - 9",
+    "summary": "Urla is a charming coastal town, just 30 min from İzmir. Famous for its vineyards, and beautiful beaches, and is one of the essential stops of gastro tourism. The Villa is located west of Urla, facing the sea and pine forest. Situated on fourteen acres of land, a 3-story house, with 900 sqm living space with 6 bedrooms, 5 bathrooms, 2 kitchens, and 2 living rooms, The villa is suitable for large families and groups. You will not want to leave this unique villa that offers spacious living spaces.\n\nThis magnificent house, built on 14 acres of land, is offered for your use with its 3 decares of the garden. After passing through the main entrance gate, you will pass by our private greenhouse and vineyards and enter the house's entranceway as you get closer you will see the house behind our planted garden. On the garden floor of the house with a pool, there is a bedroom with an en suite bathroom, a large living room with an open plan kitchen with projection and sound system, a bathroom with a bathtub and a bedroom, as well as a laundry room.\n    \nOn the second floor of the house, there is a living room with a high ceiling and fireplace, a dining table, a fully equipped closed kitchen, a TV room, and a master bedroom with an en suite bathroom, an entrance hall, and a separate toilet, as well as a 20-meter-long patio that you can open and close as you wish.\n    \nOn the top floor, there are two en-suite bedrooms and a separate bedroom. A total of four bedrooms have their own bathrooms. The whole house has a VRF air conditioning system and a heat pump with underfloor heating. At the same time, all windows are equipped with automatic blinds.\n    \nThe house has a garden consisting of olive trees on the side, as well as a large pool and a large garden in the front. There are many different types of fruit trees in the garden. There is a separate curtilage on the entrance side of the land of the house and the family responsible for the care of the house lives here. And they can reach you quickly when you need help with any subject. You will not want to leave this house, which can be considered unique in terms of location and isolation.\n    \nYou can use household items and feel in your own place. You'll have the whole place so you can enjoy the house with your family or friends.\n    \nThere is a high-speed wireless internet connection. I specially installed a booster modem for the internet to reach the whole house and garden.\n    \nThere is a kingsize bed 200x200 in the master bedroom\nThere is a kingsize bed 180x200 in the second master bedroom\nThere is a queen-size bed 160x200 in the garden bedroom\nThere is a double size bed 150x200 in the top floor bedroom\nThere is a double size bed 150x200 in the garden bedroom\nThere is a special kid bed 140x200 and a separate 100x200 bed that extends from the bottom\nWooden baby crib and portable Pack ’n Play/travel crib\n    \nIt can fit 13 adults comfortably just using the beds. and expandable crib capacity for babies, please contact us regarding this issue.\n    \nThere are two refrigerators, two dishwashers, two washing machines, a high-quality oven, two stoves, a microwave oven, a kettle, a grill for making toasted sandwiches, a bread maker, a toaster, and all kinds of utensils in the kitchen.\n    \nThere is also a coffee machine (drip pot)\nEspresso machine\nTurkish coffee machine\nTea maker\nIce crusher blender\n    \nThere are separate hairdryers in all five bathrooms.\n    \nThe whole house has a VRF air conditioning system and a heat pump with underfloor heating.\n    \nWe provide you with clean towels, bedsheets, pillows, and blankets; soap, shampoo, and toilet paper.\n\nBasic good behavior: respect the residents and the neighbors, and no excessive noise:)\n    \nSmoking is not permitted inside the house. If smoking is detected in the house, you can pay a penalty for damage to the house and the fee you will receive through airbnb.\n    \nOur house, located on a large land, is monitored with a camera system for security reasons, only the exterior areas (entryway, entrance door, front and back garden). There are no cameras inside the house.\n    \nPlease be informed that we cannot confirm or process your check-in safely without your ID registration. As a result, it's most likely that you might face severe constraints and disruptions during your stay if you fail to meet this requirement before your check-in.",
+    "capacity": 16,
+    "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Beach",
+      "Pool",
+      "Washer",
+      "Pingpong-table"
+    ],
+    "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+    ],
+    "host": {
+      "_id": "u101",
+      "fullname": "Mehmet Muhammet",
+      "imgUrls": "/images/host/host01.webp"
+    },
+    "loc": {
+      "country": "Italy",
+      "countryCode": "PT",
+      "city": "Ostana",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+    },
+    "reviews": [
+      {
+        "id": "madeId",
+        "txt": "Very helpful hosts. Cooked traditional...",
+        "rate": 4,
+        "by": {
+          "_id": "u102",
+          "fullname": "user2",
+          "imgUrl": "/img/img2.jpg"
+        }
+      }
+    ],
+    "likedByUsers": [
+      "mini-user"
+    ]
+  }
+]
