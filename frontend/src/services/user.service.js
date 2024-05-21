@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { storageService } from './async-storage.service.js'
 import { utilService } from './util.service.js'
 import { usersList } from './users.js'
-import { Axios } from 'axios'
+import Axios from 'axios'
 // import {stayServiceList} from "./stayList.service.js"
 
 
