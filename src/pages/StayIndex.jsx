@@ -4,7 +4,7 @@ import StayContent from '../cmp/StayIndex/StayContent'
 import { useSelector } from 'react-redux'
 import { loadStays, setFilterBy } from '../store/actions/stay.actions'
 import StayList from '../cmp/StayIndex/StayList'
-import { stayService } from '../services/stay.service'
+import { stayService } from '../services/stay.service.js'
 import { saveStay } from "../store/actions/stay.actions";
 
 
@@ -38,7 +38,7 @@ export default function StayIndex() {
   if (!stays) return
   return (
     <section>
-      <button onClick={onAddStay}>add</button>
+      {/* <button onClick={onAddStay}>add</button> */}
       <StaysTypeBar onSetFilter={onSetFilter}></StaysTypeBar>
       {/* <button onClick={onAddStay}>add stay</button> */}
       <StayList stays={stays}></StayList>

@@ -2,53 +2,50 @@ import PropTypes from 'prop-types'
 import { storageService } from './async-storage.service.js'
 import { utilService } from './util.service.js'
 import { staysList } from './stay-list.js'
-// import {stayServiceList} from "./stayList.service.js"
-  
+import Axios from 'axios'
+
+var axios = Axios.create({
+    withCredentials: true,
+})
+
+const BASE_URL = (process.env.NODE_ENV !== 'development') ? 
+'api/stay' :
+'//localhost:3030/api/stay/'
+
 export const stayService = {
     query,
     save,
     remove,
     getById,
-    createStay,
     getDefaultFilter,
     getFilterFromParams,
-    getStayShape
 }
-
-const STORAGE_KEY = 'stays'
-
-_createStays()
-
 
 async function query(filterBy ={}) {
-    let stays = await storageService.query(STORAGE_KEY)
-    if (filterBy) {
-        stays = stays.filter(stay => stay.type.toLowerCase().includes(filterBy.type.toLowerCase()))
-    }
+    // let stays = await storageService.query(STORAGE_KEY)
+    var {data: stays} = await axios.get(BASE_URL, {params: filterBy})
+    
     return stays
 }
-function getById(stayId) {
-    return storageService.get(STORAGE_KEY, stayId)
+
+async function getById(stayId) {
+     // return storageService.get(BASE_URL, stayId)
+    const url = BASE_URL + stayId
+    var {data: stay} = await axios.get(url)
+    return stay
+   
 }
 
-function remove(stayId) {
-    return storageService.remove(STORAGE_KEY, stayId)
+async function remove(stayId) {
+    const url = BASE_URL + stayId
+    var {data: res} = await axios.delete(url)
+    return res
 }
 
 async function save(stay) {
-    if (stay._id) {
-        return storageService.put(STORAGE_KEY, stay)
-    } else {
-        return storageService.post(STORAGE_KEY, stay)
-    }
-}
-
-function createStay(model = '', type = '', batteryStatus = 100) {
-    return {
-        model,
-        batteryStatus,
-        type
-    }
+    const method = stay._id ? 'put' : 'post'
+    const { data: savedStay } = await axios[method](BASE_URL, stay)
+    return savedStay
 }
 
 function getDefaultFilter() {
@@ -65,21 +62,20 @@ function getFilterFromParams(searchParams) {
     return filterBy
 }
 
-function getStayShape() {
-    return PropTypes.shape({
-        _id: PropTypes.string,
-        model: PropTypes.string,
-        type: PropTypes.string,
-        batteryStatus: PropTypes.number,
-    })
-}
+// function getStayShape() {
+//     return PropTypes.shape({
+//         _id: PropTypes.string,
+//         model: PropTypes.string,
+//         type: PropTypes.string,
+//         batteryStatus: PropTypes.number,
+//     })
+// }
 
-function _createStays() {
-    let stays = utilService.loadFromStorage(STORAGE_KEY)
-    console.log("stays: ", stays)
-    if (!stays || !stays.length) {
-        stays = staysList
-        console.log("stays created: ", stays)
-        utilService.saveToStorage(STORAGE_KEY, stays)
-    }
-}
+// function _createStays() {
+//     let stays = utilService.loadFromStorage(STORAGE_KEY)
+//     if (!stays || !stays.length) {
+//         stays = staysList
+//         console.log("stays created: ", stays)
+//         utilService.saveToStorage(STORAGE_KEY, stays)
+//     }
+// }
