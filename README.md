@@ -1,10 +1,10 @@
 Airbnb project.
 
 Has list of rooms that the user can enter to them.
-Under those rooms there is details of the prices.
+Under those rooms there are details of the prices.
 When you click on one of the rooms you can enter to the deatil page of the spcific room.
 
-In the first row on the right you can click there for sign in or login.
+In the first row on the right you can click for sign up or login.
 The user can add a room after he sign up.
 
 In addition there is filter bar that you can filter rooms by there types.
