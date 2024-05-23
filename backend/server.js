@@ -16,6 +16,7 @@ const corsOptions = {
 
 
 const port = process.env.PORT
+console.log('port: ', port);
 
 const app = express()
 app.use(cors(corsOptions))
@@ -97,9 +98,9 @@ app.get('/api/hosting', (req, res) => {
     res.send('hello')
 })
 
-// app.get('/**', (req, res) => {
-//     res.sendFile(path.resolove('public/index.html'))
-// })
+app.get('/**', (req, res) => {
+    res.sendFile(path.resolove('public/index.html'))
+})
 
 
 
